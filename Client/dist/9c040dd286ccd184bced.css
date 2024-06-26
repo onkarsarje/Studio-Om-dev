@@ -1,0 +1,292 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@font-face {
+    font-family: 'dazzle';
+    src: url(/965262a86134adeed688.otf); 
+}
+@font-face {
+    font-family: 'kento-bold';
+    src: url(/e388b5b80959ad240a74.otf);
+}
+@font-face {
+    font-family: 'kento-regular';
+    src: url(/e488fc13772a25ec336f.otf);
+}
+
+body {
+    background-color: #E9E9DA;
+    margin: 0 80px;
+    font-family: Arial, sans-serif;
+    color: #1861AD;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.logo {
+    height: 75px;
+}
+
+.insta-logo {
+    height: 65px; /* Adjust size as necessary */
+    margin: 0 35px 0 0;
+}
+
+.logo-container {
+    margin: 2% 0 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descriptions-container {
+    flex: 4;
+    text-align: center;
+}
+
+.description-components-container {
+    display: flex;
+    justify-content: center;
+    gap: 6%; /* Add space between items */
+    margin: 15px 0;
+    font-family: 'kento-bold';
+    font-size: x-large;
+}
+
+.description-components-container p {
+    margin: 0; /* Adjust margin for spacing */   
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+
+.footer-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'kento-regular';
+    font-size: large;
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.mail-icon {
+    height: 20px;
+    margin-top: 0;
+}
+
+.home-page-body {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.home-page-body p {
+    font-size: 600%;
+    font-family: 'dazzle';
+    font-weight: 900;
+    transition: color 0.3s;
+}
+
+.home-page-body p:hover {
+    color: #9abce3
+}
+
+.class {
+    margin-right: 0vw;
+    margin-left: 12vw;
+    margin-bottom: 0vh;
+    margin-top: 5vh;  
+}
+.price {
+    margin-right: -10vw;
+    margin-left: 30vw;
+    margin-bottom: 0vh;
+    margin-top: -1vh;  
+}
+.studio {
+    margin-right: 0vw;
+    margin-left: 21vw;
+    margin-bottom: 0vh;
+    margin-top: -1vh;  
+}
+.about {
+    margin-right: 0vw;
+    margin-left: 40vw;
+    margin-bottom: 0vh;
+    margin-top: -1vh;  
+}
+.faq {
+    margin-right: 30vw;
+    margin-left: 35vw;
+    margin-bottom: 5vh;
+    margin-top: -1vh; 
+}
+
+.page-contents {
+    height: 70vh;
+    margin-right: 3%;
+    margin-left: 9.5%;
+    overflow-y: scroll;
+    font-family: "kento-regular";
+}
+
+.QRCode {
+    height: 400px;
+}
+
+.logoBack {
+    height: 100px;
+    padding: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    border: 2px solid #1861AD;
+    max-width: 500px;
+    padding: 20px;
+    font-family: "dazzle";
+    font-size: xx-large;
+}
+
+.login input {
+    height: 40px;
+    width: 200px;
+    accent-color: #9abce3;
+    font-size: medium;
+}
+
+.outerdiv {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBut {
+    color: white;
+    background-color: #1861AD;
+    font-family: "kento-regular";
+    font-size: medium;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.loginBut:hover {
+    background-color: #9abce3;
+}
+
+.loginError {
+    font-size: small;
+}
+
+.studentContainer {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.Rbutton {
+    color: white;
+    background-color: #1861AD;
+    font-family: "dazzle";
+    font-size: medium;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.landingCont {
+    padding: 30px;
+    font-size: large;
+    /* display: flex;
+    flex-direction: column;
+    flex: 1; */
+}
+
+.landingCont p{
+    font-family: "dazzle";
+}
+
+.landingBack {
+    height: 60px;
+    padding: 10px;
+}
+
+.studentCont {
+    font-family: "kento-regular";
+    font-size: medium;
+    padding-top: 5vh;
+}   
+
+.name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.studentButtons {
+    color: white;
+    background-color: #1861AD;
+    font-family: "dazzle";
+    font-size: medium;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.newCont {
+    padding-top: 10vh;
+    font-size: large;
+    font-family: "kento-regular";
+}
+
+.register {
+    font-family: "dazzle";
+    font-size: xx-large;
+}
+
+.payCont {
+    padding-top: 10vh;
+    font-size: large;
+    font-family: "kento-regular";
+}
+
+.pay {
+    font-family: "dazzle";
+    font-size: xx-large; 
+}
+
+/*# sourceMappingURL=9c040dd286ccd184bced.css.map*/
