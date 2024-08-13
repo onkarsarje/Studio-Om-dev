@@ -1,0 +1,1661 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (2) ***!
+  \*********************************************************************/
+@font-face {
+    font-family:"dazzle";
+    src:url("https://use.typekit.net/af/5a1b8a/00000000000000007754563a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/5a1b8a/00000000000000007754563a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/5a1b8a/00000000000000007754563a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:700;
+    font-stretch:normal;
+}
+
+.Kanit-Regular {
+    font-family: "Kanit-Bold", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #1861ad;
+    margin: 0rem 6.25rem 5rem 6.25rem;
+    font-family: Arial, sans-serif;
+    color: #e0e4d8;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: url(/images/9685bc43226938da3fbd9f4b1dd85b50.png);
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header formating */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 7.5rem;
+    margin: 2.5rem 0rem;
+}
+
+.description-bar-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 7.063rem;
+}
+
+.insta-logo {
+    width: 5.688vw;
+    flex-shrink: 1;
+    margin-right: 1rem;
+}
+
+.insta-logo:hover {
+    filter: hue-rotate(180deg) invert(15%);
+}
+
+.descriptions {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+.loginIcon {
+    width: 6.885vw;
+    flex-shrink: 1;
+}
+
+.loginIcon:hover {
+    filter: hue-rotate(180deg) invert(15%);
+}
+
+.descriptions-container {
+    margin-top: 0.3rem;
+    flex-shrink: 1;
+}
+
+.description-bar-container hr {
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+}
+
+/* .description-components-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.description-components-container p {
+    margin: 0;   
+} */
+
+/************************************************/
+/* Footer formating */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-left: 6.885vw;
+    margin-right: 5.688vw;
+    margin-bottom: 2.5rem;
+}
+
+.footer-container hr {
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+    margin: 0;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier Prime';
+    font-size: 1.063rem;
+    font-weight: 400;
+}
+
+.footer-info-container a {
+    text-decoration: none;
+    color: #e0e4d8;
+}
+
+.footer-info-container a:hover {
+    text-decoration: none;
+    color: #9abce3;
+}
+
+.left {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.mail-icon {
+    height: 1.063rem;
+}
+
+/************************************************/
+.home-page-body {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.6rem;
+    overflow: hidden;
+}
+
+.homePages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1.5vh;
+}
+
+.sidebyside {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+#hidden1 {
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    body {
+        background-color: #1861ad;
+        margin: 0rem 1.5rem 1rem 1.5rem;
+        font-family: Arial, sans-serif;
+        color: #e0e4d8;
+        overflow-y: scroll;
+        background-image: url(/images/9685bc43226938da3fbd9f4b1dd85b50.png);
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    #hidden1 {
+        display: contents;
+    }
+
+    .logo {
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .description-bar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: "Courier Prime";
+        font-size: 0.8rem;
+        height: 5rem;
+    }
+
+    .description-bar-container hr {
+        background-color: #eee;
+        border: 0 none;
+        color: #eee;
+        height: 0.5px;
+        width: 100%;
+    }
+
+    .description-bar-container p {
+        text-align: center;
+        margin: 0;
+    }
+
+    .home-page-body {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 3;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .homePages {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sidebyside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6vh;
+    }
+
+    .class {
+        max-width: 13rem;
+    }
+    
+    .events {
+        max-width: 11rem;
+    }
+    
+    .price {
+        max-width: 10rem;
+    }
+    
+    .contact {
+        max-width: 14rem;
+    }
+    
+    .faq {
+        max-width: 8rem;
+    }
+    
+    .about {
+        max-width: 13rem;
+    }   
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Courier Prime';
+        margin: 0;
+        font-size: 1.063rem;
+        font-weight: 400;
+    }
+
+    .footer-container hr {
+        background-color: #eee;
+        border: none;
+        color: #eee;
+        height: 0.5px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Courier Prime';
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .footer-info-container a {
+        text-decoration: none;
+        color: #e0e4d8;
+    }
+    
+    .footer-info-container a:hover {
+        text-decoration: none;
+        color: #9abce3;
+    }
+
+    .footer-info-container p {
+        margin: 0.8rem 0;
+    }
+    
+    .left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .insta-logo {
+        width: 2.5rem;
+    }
+
+    .mail-icon {
+        height: 1.3rem;
+    }
+}
+
+@media (min-width: 1441px) {
+    .class {
+        max-width: 31.406vw;
+    }
+    
+    .class:hover {
+        max-width: 32.406vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .events {
+        max-width: 27.604vw;
+    }
+    
+    .events:hover {
+        max-width: 29.604vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .price {
+        max-width: 25.021vw;
+    }
+    
+    .price:hover {
+        max-width: 26.021vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .contact {
+        max-width: 35.125vw;
+    }
+    
+    .contact:hover {
+        max-width: 36.625vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .faq {
+        max-width: 20.75vw;
+    }
+    
+    .faq:hover {
+        max-width: 21.75vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .about {
+        max-width: 35.104vw;
+    }
+    
+    .about:hover {
+        max-width: 36.104vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+}
+
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+    .class {
+        max-width: 24.906vw;
+    }
+    
+    .class:hover {
+        max-width: 25.906vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .events {
+        max-width: 21.104vw;
+    }
+    
+    .events:hover {
+        max-width: 22.104vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .price {
+        max-width: 18.521vw;
+    }
+    
+    .price:hover {
+        max-width: 19.521vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .contact {
+        max-width: 28.125vw;
+    }
+    
+    .contact:hover {
+        max-width: 29.125vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .faq {
+        max-width: 15.25vw;
+    }
+    
+    .faq:hover {
+        max-width: 16.25vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }
+    
+    .about {
+        max-width: 28.604vw;
+    }
+    
+    .about:hover {
+        max-width: 29.604vw;
+        filter: hue-rotate(180deg) invert(15%);
+    }    
+}
+
+/****************************************/
+.QRCode {
+    height: 400px;
+}
+
+/******************************************/
+/* Login and Sign up page formating */
+
+.logoBack {
+    height: 6rem;
+    padding: 1rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e0e4d8;
+    border-radius: 20px;
+    width: 20rem;
+    padding: 1rem;
+    font-family: "dazzle";
+    font-size: xx-large;
+    flex-grow: 0;
+}
+
+.login input {
+    height: 2rem;
+    width: 12rem;
+    accent-color: #1861AD;
+    font-size: medium;
+    border-top: -10rem;
+}
+
+.outerdiv {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier Prime";
+}
+
+.loginBut {
+    color: #1861AD;
+    background-color: #e0e4d8;
+    border: 1px solid #e0e4d8;
+    font-family: "Kanit";
+    font-size: 1rem;
+    font-weight: 400;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.loginBut:hover {
+    background-color: #9abce3;
+}
+
+.loginError {
+    font-size: small;
+    font-family: "Courier Prime";
+}
+
+/************************************************/
+
+.landingCont {
+    padding: 30px;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.landingCont p{
+    font-family: "dazzle";
+}
+
+.studentContainer {
+    max-height: 500px; 
+    overflow-y: scroll;
+    font: "Courier Prime";
+    border: 1px solid #e0e4d8;
+    border-radius: 15px;
+    padding: 1rem;
+    flex-grow: 4;
+}
+
+.studentContainer a {
+    text-decoration: none;
+    color: #e0e4d8;
+}
+
+.rightLanding {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-grow: 0;
+    padding-top: 2rem;
+}
+
+.leftLanding {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.leftLanding p{
+    font-size: 3rem;
+}
+
+.Rbutton {
+    color: #1861AD;
+    background-color: #e0e4d8;
+    font-family: "dazzle";
+    font-size: 200;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.landingBack {
+    height: 5rem;
+}
+
+.studentCont {
+    font-family: "Kanit";
+    font-size: 1.5rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid #e0e4d8;
+    border-radius: 20px;
+    /* flex-basis: 30rem; */
+}  
+
+.name {
+    font-family: "dazzle";
+    font-size: 3rem;
+}
+
+.studentPage {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: "Kanit";
+    min-height: 100vh;
+    gap: 1rem; 
+}
+
+.studentButtons {
+    color: #1861AD;
+    background-color: #e0e4d8;
+    font-family: "dazzle";
+    font-size: medium;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.newCont {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: "Kanit";
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.newDiv {
+    border: 1px solid #e0e4d8;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    flex-grow: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerP {
+    font-family: "dazzle";
+    font-size: 1rem;
+}
+
+.registerDiv {
+    height: 2rem;
+    width: 20rem;
+    accent-color: #e0e4d8;
+    font-size: medium;
+    border-top: -10rem;
+}
+
+.register {
+    font-family: "dazzle";
+    font-size: 2rem;
+}
+
+.payCont {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: "Kanit";
+    min-height: 100vh;
+    gap: 1rem;
+}
+
+.pay {
+    font-family: "dazzle";
+    font-size: xx-large; 
+}
+
+.payP {
+    text-align: center;
+}
+
+.agreement {
+    padding-bottom: 1rem;
+}
+
+.agreement a {
+    color: #e0e4d8;
+}
+
+/***************************************/
+/* Inner page and title formating */
+.page-contents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 5.688vw 1rem 6.885vw;
+}
+
+.pageHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.pageTitle {
+    width: 45.125rem;
+    flex-grow: 0;
+}
+
+.close {
+    width: 6.875rem;
+}
+
+.close:hover {
+    filter: hue-rotate(180deg) invert(15%);
+}
+
+.empty{
+    width: 6.875rem;
+}
+
+/* Events page formating */
+
+.eventCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5rem 10vw; 
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.eventCard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.eventPhoto {
+    width: 30vw;
+}
+
+.more {
+    align-self: center;
+    width: 23.375rem;
+}
+
+.moreImg {
+    border-radius: 10px;
+    box-shadow: 4px 5px 8px #0b427a;
+}
+
+.eventTitle {
+    font-family: "dazzle";
+    font-size: 2rem;
+    margin: 1.5rem 0 ;
+}
+
+.eventDesc {
+    font-family: "Courier Prime";
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+    .pageTitle {
+        width: 35.125rem;
+        flex-grow: 0;
+    }
+    
+    .close {
+        width: 3.875rem;
+    }
+
+    .empty{
+        width: 3.875rem;
+    }
+
+    .eventCard {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 25vw;
+    }
+    
+    .eventPhoto {
+        width: 25vw;
+    }
+    
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moreImg {
+        width: 18rem;
+        box-shadow: 4px 5px 8px #0b427a;
+    }
+    
+    .eventTitle {
+        font-family: "dazzle";
+        font-size: 1.5rem;
+        margin: 1.5rem 0 ;
+    }
+    
+    .eventDesc {
+        font-family: "Courier Prime";
+        font-size: 1rem;
+        margin: 0 0 1rem;
+    }
+}
+
+@media (max-width: 1020px){
+    .page-contents {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0;
+    }
+    
+    .pageHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .pageTitle {
+        width: 18.125rem;
+        flex-grow: 0;
+    }
+    
+    .close {
+        width: 2rem;
+    }
+
+    .empty {
+        width: 2rem;
+    }
+
+    .eventCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 4rem; 
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .eventCard {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 80vw;
+    }
+    
+    .eventPhoto {
+        width: 80vw;
+    }
+    
+    .more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moreImg {
+        width: 18rem;
+        box-shadow: 4px 5px 8px #0b427a;
+    }
+    
+    .eventTitle {
+        font-family: "dazzle";
+        font-size: 1.5rem;
+        margin: 1.5rem 0 ;
+    }
+    
+    .eventDesc {
+        font-family: "Courier Prime";
+        font-size: 1rem;
+        margin: 0 0 1rem;
+    }
+}
+
+/* FAQ page formating */
+
+.faqTitle {
+    width: 19.375rem;
+    flex-grow: 0;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "dazzle";
+}
+
+.question {
+    background-color: #e0e4d8;
+    color: #1861AD;
+    border: 4px solid #1861AD;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px #0b427a;
+}
+
+.question:hover {
+    background-color: #9abce3;
+}
+
+.answer {
+    color: #e0e4d8;
+    padding: 2rem 0;
+    font-family: "Courier Prime";
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+    overflow: hidden;
+}
+
+@media (max-width: 1020px){
+    .faqTitle {
+        width: 8.375rem;
+        flex-grow: 0;
+    }
+
+    .question {
+        background-color: #e0e4d8;
+        color: #1861AD;
+        border: 4px solid #1861AD;
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        width: 80%;
+        text-align: center;
+        border-radius: 10px;
+    }
+}
+
+/***************************************************/
+/* About us page formating */
+
+.aboutTitle {
+    width: 25.75rem;
+}
+
+.aboutContents {
+    display: flex;
+    flex-direction: column;
+    font-family: "Courier Prime";
+    font-size: 2rem;
+    padding: 0 6.875rem;
+}
+
+.top {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutPicture {
+    width: 28.938rem;
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+    .aboutContents {
+        display: flex;
+        flex-direction: column;
+        font-family: "Courier Prime";
+        font-size: 1.8rem;
+        padding: 0 4.875rem;
+    }
+
+    .top {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .inside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutPicture {
+        width: 18.938rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    .aboutTitle {
+        width: 12.75rem;
+    }
+    
+    .aboutContents {
+        display: flex;
+        flex-direction: column;
+        font-family: "Courier Prime";
+        font-size: 1rem;
+        padding: 0;
+    }
+    
+    .top {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .inside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .aboutPicture {
+        width: 15.938rem;
+    }
+}
+
+/*************************************************/
+/* Prices page formating */
+
+.ratesTitle {
+    width: 17.625rem;
+}
+
+.tierTitle {
+    width: 68.125rem;
+}
+
+.allTiers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerTier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerTier img {
+    width: 31.875rem;
+}
+
+.tier li {
+    font-family: "Courier Prime";
+    font-size: 1.8rem;
+}
+
+.studentList {
+    width: 21.875rem;
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {
+    .ratesTitle {
+        width: 17.625rem;
+    }
+    
+    .tierTitle {
+        width: 48.125rem;
+    }
+    
+    .allTiers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .tier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .innerTier {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .innerTier img {
+        width: 21.875rem;
+    }
+    
+    .tier li {
+        font-family: "Courier Prime";
+        font-size: 1.8rem;
+    }
+    
+    .studentList {
+        width: 21.875rem;
+    }
+}
+
+@media (max-width: 1020px){
+    .ratesTitle {
+        width: 10.625rem;
+    }
+    
+    .tierTitle {
+        width: 80vw;
+    }
+    
+    .allTiers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .tier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .innerTier {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .innerTier img {
+        width: 60vw;
+    }
+    
+    .tier li {
+        font-family: "Courier Prime";
+        font-size: 1rem;
+    }
+    
+    .studentList {
+        width: 21.875rem;
+    }
+}
+
+
+/************************************************/
+/* Contact page formating */
+
+.contactTitle {
+    width: 23.875rem;
+}
+
+.contactContents {
+    display: flex;
+    flex-direction: column;
+    padding: 0 6.875rem;
+    gap: 3rem;
+    font-size: 2.5rem;
+    font-family: "Courier Prime";
+}
+
+.contactText {
+    width: 30.688rem;
+}
+
+.field p {
+    margin: 0;
+}
+
+.field input {
+   width: 100%; 
+   height: 4rem;
+   border: 2px solid #e0e4d8;
+   border-radius: 10px;
+   background: transparent;
+   font-family: "Courier Prime";
+   font-size: 1.5rem;
+   padding: 0 1rem;
+   color: #e0e4d8;
+   text-align: left;
+}
+
+.field input:focus {
+   border-color: #e0e4d8;
+   outline: none;
+}
+
+.field textarea {
+   width: 100%; 
+   height: 30rem; 
+   border: 2px solid #e0e4d8;
+   border-radius: 10px;
+   background: transparent;
+   font-size: 1.3rem;
+   font-family: "Courier Prime"; 
+   color: #e0e4d8;
+   padding: 1rem 1rem; 
+   resize: none; 
+   overflow-wrap: break-word; 
+   overflow-y: scroll;
+   white-space: pre-wrap; 
+}
+
+.field textarea:focus {
+    border-color: #e0e4d8;
+    outline: none;
+ }
+
+.contactContents button {
+    align-self: center;
+    width: 10rem;
+    height: 3rem;
+    border: 4px solid #1861AD;
+    border-radius: 10px;
+    color: #1861AD;
+    background-color: #e0e4d8;
+    font-family: "dazzle";
+    font-size: 2rem;
+    box-shadow: 4px 5px 8px #0b427a;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactError {
+    font-family: "Courier Prime";
+    font-size: 1rem;
+    color: #e0e4d8;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) { 
+    .contactContents {
+        display: flex;
+        flex-direction: column;
+        padding: 0 6.875rem;
+        gap: 3rem;
+        font-size: 1.8rem;
+        font-family: "Courier Prime";
+    }
+    
+    .contactText {
+        width: 25.688rem;
+    }
+    
+    .field p {
+        margin: 0;
+    }
+    
+    .field input {
+       width: 100%; 
+       height: 3rem;
+       border: 2px solid #e0e4d8;
+       border-radius: 10px;
+       background: transparent;
+       font-family: "Courier Prime";
+       font-size: 1.5rem;
+       padding: 0 1rem;
+       color: #e0e4d8;
+       text-align: left;
+    }
+    
+    .field input:focus {
+       border-color: #e0e4d8;
+       outline: none;
+    }
+    
+    .field textarea {
+       width: 100%; 
+       height: 20rem; 
+       border: 2px solid #e0e4d8;
+       border-radius: 10px;
+       background: transparent;
+       font-size: 1.3rem;
+       font-family: "Courier Prime"; 
+       color: #e0e4d8;
+       padding: 1rem 1rem; 
+       resize: none; 
+       overflow-wrap: break-word; 
+       overflow-y: scroll;
+       white-space: pre-wrap; 
+    }
+    
+    .field textarea:focus {
+        border-color: #e0e4d8;
+        outline: none;
+     }
+}
+
+@media (max-width: 1020px) {
+    .contactTitle {
+        width: 11.875rem;
+    }
+
+    .contactContents {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.5rem;
+        padding: 0;
+        font-family: "Courier Prime";
+    }
+    
+    .contactText {
+        width: 18.688rem;
+    }
+
+    .field {
+        align-self: center;
+    }
+    
+    .field p {
+        margin: 0;
+    }
+    
+    .field input {
+       width: 75vw; 
+       height: 2rem;
+       border: 2px solid #e0e4d8;
+       border-radius: 10px;
+       background: transparent;
+       font-family: "Courier Prime";
+       font-size: 1.1rem;
+       padding: 0 1rem;
+       color: #e0e4d8;
+       text-align: left;
+    }
+    
+    .field input:focus {
+       border-color: #e0e4d8;
+       outline: none;
+    }
+    
+    .field textarea {
+       width: 75vw; 
+       height: 15rem; 
+       border: 2px solid #e0e4d8;
+       border-radius: 10px;
+       background: transparent;
+       font-size: 1rem;
+       font-family: "Courier Prime"; 
+       color: #e0e4d8;
+       padding: 1rem 1rem; 
+       resize: none; 
+       overflow-wrap: break-word; 
+       overflow-y: scroll;
+       white-space: pre-wrap; 
+    }
+    
+    .field textarea:focus {
+        border-color: #e0e4d8;
+        outline: none;
+    }
+
+    .contactContents button {
+        align-self: center;
+        width: 5rem;
+        height: 2rem;
+        border: 4px solid #1861AD;
+        border-radius: 10px;
+        color: #1861AD;
+        background-color: #e0e4d8;
+        font-family: "dazzle";
+        font-size: 1rem;
+        box-shadow: 4px 5px 8px #0b427a;
+        margin-bottom: 2rem;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+/************************************************/
+/* Classes page formating */
+
+.classesTitle {
+   width: 23.313rem; 
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2vw;
+    padding-right: 4rem;
+    margin-bottom: 1rem;
+}
+
+.days img {
+    padding: 1rem 0.5rem;
+}
+
+.tue {
+    width: 10.438rem;
+}
+
+.wed {
+    width: 15.25rem;
+}
+
+.fri {
+    width: 9.938rem;
+}
+
+.sat {
+ width: 12.375rem;
+}
+
+#selected {
+    border: 1px solid #e0e4d8;
+    border-radius: 10px;
+}
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid  #e0e4d8;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.classCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Dazzle";
+    gap: 1rem;
+}
+
+.classCard div {
+    font-size: 1rem;
+    font-weight: 400;
+    flex-basis: 8vw;
+    flex-shrink: 0;
+}
+
+.classCard div p:nth-of-type(2){
+    font-size: 0.8rem;
+    margin-top: -2rem;
+}
+
+.classCard p:nth-of-type(1) {
+    font-size: 1.8rem;
+    font-weight: 400;
+    flex-basis: 15vw;
+    flex-shrink: 0;
+}
+
+.classCard p:nth-of-type(2) {
+    font-family: "Courier Prime";
+    font-size: 1.3rem;
+    flex-grow: 1;
+}
+
+@media (max-width: 1440px) and (min-width: 1021px) {    
+    .tue {
+        width: 6.438rem;
+    }
+    
+    .wed {
+        width: 10.25rem;
+    }
+    
+    .fri {
+        width: 5.938rem;
+    }
+    
+    .sat {
+     width: 7.375rem;
+    }
+    
+}
+
+@media (max-width: 1020px){
+    .classesTitle {
+        width: 12.313rem; 
+     }
+     
+     .days {
+         display: flex;
+         flex-direction: row;
+         justify-content: end;
+         gap: 1vw;
+         padding-right: 0;
+         margin-bottom: 1rem;
+     }
+     
+     .days img {
+         padding: 0.5rem 0.2rem;
+     }
+     
+     .tue {
+         width: 15.438vw;
+     }
+     
+     .wed {
+         width: 22.25vw;
+     }
+     
+     .fri {
+         width: 14.938vw;
+     }
+     
+     .sat {
+        width: 18.375vw;
+     }
+     
+     #selected {
+         border: 1px solid #e0e4d8;
+         border-radius: 10px;
+     }
+     
+     .classes {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         border: 1px solid  #e0e4d8;
+         border-radius: 15px;
+         padding: 2rem;
+         margin: 0;
+         gap: 3rem;
+     }
+
+     .classes p {
+        margin: 0;
+     }
+     
+     .classCard {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: start;
+         font-family: "Dazzle";
+     }
+     
+     .classCard div {
+         font-size: 0.5rem;
+         font-weight: 400;
+     }
+     
+     .classCard div p:nth-of-type(2){
+         font-size: 0.8rem;
+     }
+     
+     .classCard p:nth-of-type(1) {
+         font-size: 1rem;
+         font-weight: 400;
+     }
+     
+     .classCard p:nth-of-type(2) {
+         font-family: "Courier Prime";
+         font-size: 1rem;
+         margin-top: -2rem;
+     }
+}
+
+/************************************************/
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none; /* Hide scrollbar buttons */
+}
+
+/*# sourceMappingURL=30adc4e1a3dfeb7b3c7c.css.map*/

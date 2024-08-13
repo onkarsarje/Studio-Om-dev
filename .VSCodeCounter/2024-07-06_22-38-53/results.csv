@@ -1,0 +1,36 @@
+"filename", "language", "JSON with Comments", "JSON", "TypeScript JSX", "TypeScript", "CSS", "HTML", "JavaScript", "comment", "blank", "total"
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\package-lock.json", "JSON", 0, 11950, 0, 0, 0, 0, 0, 0, 1, 11951
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\package.json", "JSON", 0, 41, 0, 0, 0, 0, 0, 0, 1, 42
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AboutUsContents.tsx", "TypeScript JSX", 0, 0, 29, 0, 0, 0, 0, 0, 3, 32
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminAddNewStudentPage.tsx", "TypeScript JSX", 0, 0, 97, 0, 0, 0, 0, 0, 14, 111
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminLandingPage.tsx", "TypeScript JSX", 0, 0, 114, 0, 0, 0, 0, 0, 18, 132
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminPaymentPage.tsx", "TypeScript JSX", 0, 0, 258, 0, 0, 0, 0, 2, 41, 301
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminStudentPage.tsx", "TypeScript JSX", 0, 0, 152, 0, 0, 0, 0, 2, 25, 179
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\ClassContents.tsx", "TypeScript JSX", 0, 0, 196, 0, 0, 0, 0, 0, 13, 209
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\FaqContents.tsx", "TypeScript JSX", 0, 0, 102, 0, 0, 0, 0, 0, 16, 118
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\LoginPage.tsx", "TypeScript JSX", 0, 0, 55, 0, 0, 0, 0, 0, 9, 64
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\PriceContents.tsx", "TypeScript JSX", 0, 0, 66, 0, 0, 0, 0, 0, 3, 69
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\Student.ts", "TypeScript", 0, 0, 0, 24, 0, 0, 0, 0, 3, 27
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\StudioContents.tsx", "TypeScript JSX", 0, 0, 42, 0, 0, 0, 0, 0, 3, 45
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\YogaApp.tsx", "TypeScript JSX", 0, 0, 145, 0, 0, 0, 0, 0, 13, 158
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\images.d.ts", "TypeScript", 0, 0, 0, 16, 0, 0, 0, 0, 3, 19
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\index.html", "HTML", 0, 0, 0, 0, 0, 13, 0, 0, 1, 14
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\index.tsx", "TypeScript JSX", 0, 0, 8, 0, 0, 0, 0, 0, 2, 10
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\record.ts", "TypeScript", 0, 0, 0, 3, 0, 0, 0, 5, 0, 8
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\style.css", "CSS", 0, 0, 0, 0, 557, 0, 0, 21, 106, 684
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\webpack.config.js", "JavaScript", 0, 0, 0, 0, 0, 0, 95, 0, 10, 105
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\tsconfig.json", "JSON with Comments", 21, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\host.json", "JSON", 0, 20, 0, 0, 0, 0, 0, 0, 1, 21
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\local.settings.sample.json", "JSON", 0, 12, 0, 0, 0, 0, 0, 0, 1, 13
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\package-lock.json", "JSON", 0, 3780, 0, 0, 0, 0, 0, 0, 1, 3781
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\package.json", "JSON", 0, 33, 0, 0, 0, 0, 0, 0, 1, 34
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\AddStudent.ts", "TypeScript", 0, 0, 0, 77, 0, 0, 0, 0, 15, 92
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\DecrementClasses.ts", "TypeScript", 0, 0, 0, 83, 0, 0, 0, 0, 13, 96
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\GetStudentById.ts", "TypeScript", 0, 0, 0, 70, 0, 0, 0, 0, 12, 82
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\GetStudents.ts", "TypeScript", 0, 0, 0, 57, 0, 0, 0, 0, 11, 68
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\UpdateStudentById.ts", "TypeScript", 0, 0, 0, 83, 0, 0, 0, 0, 16, 99
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\functionapp_studioOM.ts", "TypeScript", 0, 0, 0, 11, 0, 0, 0, 0, 5, 16
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\index.ts", "TypeScript", 0, 0, 0, 36, 0, 0, 0, 0, 5, 41
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\services\config.ts", "TypeScript", 0, 0, 0, 16, 0, 0, 0, 1, 1, 18
+"c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\tsconfig.json", "JSON with Comments", 10, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"Total", "-", 31, 15836, 1264, 476, 557, 13, 95, 31, 368, 18671

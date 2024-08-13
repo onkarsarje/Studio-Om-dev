@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "emailjs-com": "^3.2.0",
+    "nodemailer": "^6.9.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -29,6 +32,7 @@
     "mini-css-extract-plugin": "^2.6.1",
     "mocha": "^10.1.0",
     "progress-bar-webpack-plugin": "^2.1.0",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.4.1",
     "ts-mocha": "^10.0.0",
     "typescript": "^4.8.4",

@@ -19,7 +19,7 @@ export async function studentList(request: HttpRequest, context: InvocationConte
             }
 
             const sqlRequest = new SqlRequest(
-                "SELECT StudentID, Name FROM Student",
+                "SELECT StudentID, Name, Phone FROM Student",
                 (err, rowCount, rows) => {
                     if (err) {
                         context.error("Request failed: ", err);
@@ -31,22 +31,13 @@ export async function studentList(request: HttpRequest, context: InvocationConte
                         return;
                     }
 
-                    if (rowCount === 0) {
-                        context.warn("No rows returned from the query.");
-                        resolve({
-                            status: 404,
-                            jsonBody: { error: "No students found" }
-                        });
-                        connection.close();
-                        return;
-                    }
-
                     const students: any[] = [];
 
                     rows.forEach((row: { value: any; }[]) => {
                         const student = {
                             id: row[0].value,
                             name: row[1].value,
+                            phone: row[2].value
                         };
                         students.push(student);
                     });

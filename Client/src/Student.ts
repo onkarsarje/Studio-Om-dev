@@ -3,6 +3,7 @@ import { isRecord } from "./record";
 export type basicStudent = {
     id: number;
     name: string;
+    phone: string
 };
 
 export type Student = {

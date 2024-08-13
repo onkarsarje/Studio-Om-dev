@@ -47,7 +47,7 @@ const config = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
         ]
       },
       {
@@ -60,6 +60,13 @@ const config = {
           },
         ],
       },
+      {
+        test: /\.(otf|woff)$/,
+        type: 'asset/resource',
+        generator: {
+            filename: './fonts/[name][ext]'
+        },
+    },
     ]
   },
 

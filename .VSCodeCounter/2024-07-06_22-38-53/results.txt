@@ -1,0 +1,73 @@
+Date : 2024-07-06 22:38:53
+Directory : c:\Users\vinay\Desktop\Studio OM git\StudioOM
+Total : 34 files,  18272 codes, 31 comments, 368 blanks, all 18671 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          6 |     15,836 |          0 |          6 |     15,842 |
+| TypeScript JSX     |         12 |      1,264 |          4 |        160 |      1,428 |
+| CSS                |          1 |        557 |         21 |        106 |        684 |
+| TypeScript         |         11 |        476 |          6 |         84 |        566 |
+| JavaScript         |          1 |         95 |          0 |         10 |        105 |
+| JSON with Comments |          2 |         31 |          0 |          1 |         32 |
+| HTML               |          1 |         13 |          0 |          1 |         14 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                       | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                          |         34 |     18,272 |         31 |        368 |     18,671 |
+| Client                                                                                     |         21 |     13,984 |         30 |        286 |     14,300 |
+| Client (Files)                                                                             |          3 |     12,012 |          0 |          3 |     12,015 |
+| Client\src                                                                                 |         18 |      1,972 |         30 |        283 |      2,285 |
+| Server                                                                                     |         13 |      4,288 |          1 |         82 |      4,371 |
+| Server (Files)                                                                             |          5 |      3,855 |          0 |          4 |      3,859 |
+| Server\src                                                                                 |          8 |        433 |          1 |         78 |        512 |
+| Server\src (Files)                                                                         |          1 |         36 |          0 |          5 |         41 |
+| Server\src\functions                                                                       |          6 |        381 |          0 |         72 |        453 |
+| Server\src\services                                                                        |          1 |         16 |          1 |          1 |         18 |
++--------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                   | language           | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\package-lock.json                     | JSON               |     11,950 |          0 |          1 |     11,951 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\package.json                          | JSON               |         41 |          0 |          1 |         42 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AboutUsContents.tsx               | TypeScript JSX     |         29 |          0 |          3 |         32 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminAddNewStudentPage.tsx        | TypeScript JSX     |         97 |          0 |         14 |        111 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminLandingPage.tsx              | TypeScript JSX     |        114 |          0 |         18 |        132 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminPaymentPage.tsx              | TypeScript JSX     |        258 |          2 |         41 |        301 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\AdminStudentPage.tsx              | TypeScript JSX     |        152 |          2 |         25 |        179 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\ClassContents.tsx                 | TypeScript JSX     |        196 |          0 |         13 |        209 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\FaqContents.tsx                   | TypeScript JSX     |        102 |          0 |         16 |        118 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\LoginPage.tsx                     | TypeScript JSX     |         55 |          0 |          9 |         64 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\PriceContents.tsx                 | TypeScript JSX     |         66 |          0 |          3 |         69 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\Student.ts                        | TypeScript         |         24 |          0 |          3 |         27 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\StudioContents.tsx                | TypeScript JSX     |         42 |          0 |          3 |         45 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\YogaApp.tsx                       | TypeScript JSX     |        145 |          0 |         13 |        158 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\images.d.ts                       | TypeScript         |         16 |          0 |          3 |         19 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\index.html                        | HTML               |         13 |          0 |          1 |         14 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\index.tsx                         | TypeScript JSX     |          8 |          0 |          2 |         10 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\record.ts                         | TypeScript         |          3 |          5 |          0 |          8 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\style.css                         | CSS                |        557 |         21 |        106 |        684 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\src\webpack.config.js                 | JavaScript         |         95 |          0 |         10 |        105 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Client\tsconfig.json                         | JSON with Comments |         21 |          0 |          1 |         22 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\host.json                             | JSON               |         20 |          0 |          1 |         21 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\local.settings.sample.json            | JSON               |         12 |          0 |          1 |         13 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\package-lock.json                     | JSON               |      3,780 |          0 |          1 |      3,781 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\package.json                          | JSON               |         33 |          0 |          1 |         34 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\AddStudent.ts           | TypeScript         |         77 |          0 |         15 |         92 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\DecrementClasses.ts     | TypeScript         |         83 |          0 |         13 |         96 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\GetStudentById.ts       | TypeScript         |         70 |          0 |         12 |         82 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\GetStudents.ts          | TypeScript         |         57 |          0 |         11 |         68 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\UpdateStudentById.ts    | TypeScript         |         83 |          0 |         16 |         99 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\functions\functionapp_studioOM.ts | TypeScript         |         11 |          0 |          5 |         16 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\index.ts                          | TypeScript         |         36 |          0 |          5 |         41 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\src\services\config.ts                | TypeScript         |         16 |          1 |          1 |         18 |
+| c:\Users\vinay\Desktop\Studio OM git\StudioOM\Server\tsconfig.json                         | JSON with Comments |         10 |          0 |          0 |         10 |
+| Total                                                                                      |                    |     18,272 |         31 |        368 |     18,671 |
++--------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

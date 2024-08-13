@@ -1,17 +1,27 @@
 import React, {Component} from "react";
 import "./style.css"
-import logo from "./assets/Logo.png"
-import igIcon from "./assets/IG icon.png"
-import mailIcon from "./assets/Envelope icon.png" 
+import logo from "./assets/Asset 6.png"
+import igIcon from "./assets/Asset 3.png"
+import mailIcon from "./assets/Asset 4.png" 
 import { ClassContents } from "./ClassContents";
 import { AboutUsContents } from "./AboutUsContents";
 import { PriceContents } from "./PriceContents";
-import { StudioContents } from "./StudioContents";
+import { ContactContents } from "./ContactContents";
 import { FaqContents } from "./FaqContents";
 import { LoginPage } from "./LoginPage";
 import { AdminLandingPage } from "./AdminLandingPage";
+import loginIcon from "./assets/Asset 2.png"
+import { SignUpPage } from "./SignUpPage";
+import description from "./assets/Asset 1.png"
+import classesIcon from "./assets/classes.png"
+import eventsIcon from "./assets/events.png"
+import ratesIcon from "./assets/rates.png"
+import contactIcon from "./assets/for menu.png"
+import faqIcon from "./assets/faqs.png"
+import aboutIcon from "./assets/about us.png"
+import { EventsContents } from "./EventsContent";
 
-type Page = "home" | "classes" | "prices" | "studio" | "about" | "faq" | "login"
+type Page = "home" | "classes" | "prices" | "studio" | "about" | "faq" | "login" | "signup" | "payment" | "events"
 type YogaAppState = {page: Page, loggedIn: boolean};
 
 export class YogaApp extends Component<{}, YogaAppState> {
@@ -22,59 +32,78 @@ export class YogaApp extends Component<{}, YogaAppState> {
 
     render = (): JSX.Element => {
         if (this.state.page === "home") {
-            return <div>
+            return <div id="main">
             {this.renderHeader()}
                 <div className="home-page-body">
-                    <p className="class" onClick={this.doClassesClick}>CLASSES & EVENTS</p>
-                    <p className="price" onClick={this.doPricesClick}>PRICES & PASSES</p>
-                    <p className="studio" onClick={this.doStudioClick}>THE STUDIO</p>
-                    <p className="about" onClick={this.doAboutClick}>ABOUT US</p>
-                    <p className="faq" onClick={this.doFaqClick}>FAQS</p>
+                    <div className="homePages">
+                        <div className="sidebyside">
+                            <img src={classesIcon} className="class" onClick={this.doClassesClick}/>
+                            <img src={eventsIcon} className="events" onClick={this.doEventsClick}/>
+                        </div>
+                        <img src={ratesIcon} className="price" onClick={this.doPricesClick}/>
+                        <img src={contactIcon} className="contact" onClick={this.doStudioClick}/>
+                        <div className="sidebyside">
+                            <img src={faqIcon} className="faq" onClick={this.doFaqClick}/>
+                            <img src={aboutIcon} className="about" onClick={this.doAboutClick}/>
+                        </div >
+                    </div>
                 </div>
             {this.renderFooter()}
           </div>;
         }
         if (this.state.page === "about") {
-            return <div>
+            return <div id="main">
                 {this.renderHeader()}
-                <AboutUsContents/>
+                <AboutUsContents onBackClick={this.doBackClick}/>
                 {this.renderFooter()}
             </div>
         } if (this.state.page === "classes") {
-            return <div>
+            return <div id="main">
                 {this.renderHeader()}
-                <ClassContents/>
+                <ClassContents onBackClick={this.doBackClick}/>
+                {this.renderFooter()}
+            </div>
+        } if (this.state.page === "events") {
+            return <div id="main">
+                {this.renderHeader()}
+                <EventsContents onBackClick={this.doBackClick}/>
                 {this.renderFooter()}
             </div>
         } if (this.state.page === "prices") {
-            return <div>
+            return <div id="main">
                 {this.renderHeader()}
-                <PriceContents/>
+                <PriceContents onBackClick={this.doBackClick}/>
                 {this.renderFooter()}
             </div>
         } if (this.state.page === "studio") {
-            return <div>
+            return <div id="main">
                 {this.renderHeader()}
-                <StudioContents/>
+                <ContactContents onBackClick={this.doBackClick}/>
                 {this.renderFooter()}
             </div>
         } if (this.state.page === "faq") {
-            return <div>
+            return <div id="main">
                 {this.renderHeader()}
-                <FaqContents/>
+                <FaqContents onBackClick={this.doBackClick}/>
                 {this.renderFooter()}
             </div>
         } if (this.state.page === "login" && !this.state.loggedIn) {
             return <div>
                 <LoginPage onBackClick={this.doBackClick} 
-                           onLoginClick={this.doLoginClick}/>
+                           onLoginClick={this.doLoginClick}
+                           onSignUpClick={this.doSignUpClick}/>
             </div>
         } if (this.state.page === "login" && this.state.loggedIn) {
             return <div>
                <AdminLandingPage onBackToHomeClick={this.doBackClick}/>
             </div>
+        } if (this.state.page === "signup" && !this.state.loggedIn) {
+            return <div>
+                <SignUpPage onBackClick={this.doBackClick}
+                            onLoginClick={this.doLoginPageClick}/>
+            </div>
         } else {
-        throw new Error("How did u even get here u hacker >:(");
+            throw new Error("How did u even get here u hacker >:(");
        }
     }
 
@@ -84,21 +113,21 @@ export class YogaApp extends Component<{}, YogaAppState> {
                 <div className="logo-container">
                     <img src={logo} alt="Studio OM Logo" className="logo" onClick={this.doBackClick}/>
                 </div>
-                <div className="description-bar-container">
-                    <a href="https://www.instagram.com/studioomla/">
+                <div className="description-bar-container" id="hidden">
+                    <a href="https://www.instagram.com/studioomla/" target="_blank">
                         <img src={igIcon} alt="Instagram Logo" className="insta-logo"/>
                     </a> 
                     <div className="descriptions-container">
                         <hr/>
-                        <div className="description-components-container">
-                            <p>Yoga</p>
-                            <p>Meditation</p>
-                            <p>Wisdom</p>
-                            <p>Connection</p>
-                            <p onClick={this.doLoginPageClick}>Yoga</p>
-                        </div>
+                            <img className="descriptions" src= {description}/>
                         <hr/>
                     </div>
+                    <img className="loginIcon" src= {loginIcon} onClick={this.doLoginPageClick}/>
+                </div>
+                <div className="description-bar-container" id="hidden1">
+                    <hr/>
+                    <p>2316 1/2 S UNION AVE, SUITE 1, LOS ANGELES</p>
+                    <hr/>
                 </div>
             </div>
         );
@@ -106,19 +135,42 @@ export class YogaApp extends Component<{}, YogaAppState> {
 
     renderFooter = (): JSX.Element => {
         return (<div className="footer-container">
-            <div><hr/></div>
-            <div className="footer-info-container">
+            <hr/> 
+            <div className="footer-info-container" id="hidden">
                 <div className="left">
                     <p>(+1) 213-357-7323</p>
-                    <img src={mailIcon} alt="email icon" className="mail-icon"/>
+                    <a href="mailto: Studio.om.losangeles@gmail.com">
+                        <img src={mailIcon} alt="email icon" className="mail-icon"/>
+                    </a>
                 </div>
-                <p>2316 1/2 S Union Avenue, LA</p>
+                <div className="right">
+                    <p>2316 1/2 S Union Ave, Suite 1, Los Angeles</p>
+                </div>
+            </div>
+            <div className="footer-info-container" id="hidden1">
+                <p>(+1) 213-357-7323</p>
+                <div className="left">
+                    <a href="https://www.instagram.com/studioomla/" >
+                        <img src={igIcon} alt="Instagram Logo" className="insta-logo"/>
+                    </a>
+                    <a href="mailto: Studio.om.losangeles@gmail.com">
+                        <img src={mailIcon} alt="email icon" className="mail-icon"/>
+                    </a>
+                </div>
             </div>
         </div>)
     }
 
+    doSignUpClick = (): void => {
+        this.setState({page: "signup"});
+    }
+
     doClassesClick = (): void => {
         this.setState({page: "classes"});
+    }
+
+    doEventsClick = (): void => {
+        this.setState({page: "events"});
     }
 
     doPricesClick = (): void => {
@@ -147,5 +199,11 @@ export class YogaApp extends Component<{}, YogaAppState> {
 
     doLoginClick = (): void => {
         this.setState({loggedIn: true});
+        console.log(this.state.loggedIn)
+        console.log(this.state.page)
+    }
+
+    doContinueClick = (): void => {
+        this.setState({page: "payment"})
     }
 }

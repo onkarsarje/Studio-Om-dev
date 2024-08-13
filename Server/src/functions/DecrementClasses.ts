@@ -57,8 +57,8 @@ export async function decrementClasses(request: HttpRequest, context: Invocation
                 }
 
                 const numClasses = rows[0][0].value;
-                if (numClasses > 0 && numClasses !== null) {
-                    const updateQuery = `UPDATE Student SET SessionsLeft = SessionsLeft - 1 WHERE StudentID = ${id}`;
+                if ( numClasses !== null) {
+                    const updateQuery = `UPDATE Student SET SessionsLeft = SessionsLeft + 1 WHERE StudentID = ${id}`;
                     const updateRequest = new SqlRequest(updateQuery, (err) => {
                         if (err) {
                             context.error("Request failed: ", err);
@@ -72,7 +72,7 @@ export async function decrementClasses(request: HttpRequest, context: Invocation
 
                         resolve({
                             status: 200,
-                            jsonBody: { message: "numClasses decremented successfully" }
+                            jsonBody: { message: "numClasses incremented successfully" }
                         });
                         connection.close();
                     });
@@ -81,7 +81,7 @@ export async function decrementClasses(request: HttpRequest, context: Invocation
                 } else {
                     resolve({
                         status: 400,
-                        jsonBody: { error: "numClasses is already 0" }
+                        jsonBody: { error: "numClasses is null" }
                     });
                     connection.close();
                 }

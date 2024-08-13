@@ -6,7 +6,7 @@ import React from "react";
 import { Student, isStudent } from "./Student";
 import { isRecord } from "./record";
 import { AdminPaymentPage } from "./AdminPaymentPage";
-import "./style.css"
+import "./style.css";
 
 type AdminStudentPageProps = {
     id: number
@@ -22,84 +22,72 @@ type AdminStudentPageState = {
 export class AdminStudentPage extends Component<AdminStudentPageProps, AdminStudentPageState> {
     constructor(props: AdminStudentPageProps) {
         super(props);
-        this.state = {currStudent: undefined, page: "student", updating: false}
+        this.state = { currStudent: undefined, page: "student", updating: false };
     }
 
     componentDidMount(): void {
-        this.doRefreshTimeOut()
+        this.doRefreshTimeOut();
     }
-    
 
     componentDidUpdate(): void {
         if (this.state.updating) {
-            this.doRefreshTimeOut()
+            this.doRefreshTimeOut();
         }
     }
 
     render = (): JSX.Element => {
         if (this.state.currStudent === undefined) {
-            return <p>Loading...</p>
+            return <p>Loading...</p>;
         } else if (this.state.page === "student") {
-            return <div className="studentCont">
-                {this.renderChanges()}
-                <div className="buttonDiv">
-                    <button onClick={this.doBackClick} className="studentButtons">Back</button> 
-
-                    <button onClick={this.doCheckInClick} className="studentButtons">Check In</button> 
-
-                    <button onClick={this.doPassClick} className="studentButtons">Update Pass</button>
+            return <div className="studentPage">
+                <div className="studentCont">
+                    {this.renderChanges()}
                 </div>
-               </div>;
+                <div className="buttonDiv">
+                        <button onClick={this.doBackClick} className="studentButtons">BACK</button>
+                        <button onClick={this.doCheckInClick} className="studentButtons">CHECK IN</button>
+                        <button onClick={this.doPassClick} className="studentButtons">UPDATE PASS</button>
+                    </div>
+            </div>;
         } else {
             return <AdminPaymentPage studentInfo={this.props.id}
-                                     onBackClick={this.onBackClick}
-                                     onConfirmClick={this.doConfirmClick}/>
+                onBackClick={this.onBackClick}
+                onConfirmClick={this.doConfirmClick} />;
         }
     }
-    
+
     renderChanges = (): JSX.Element => {
-        if (this.state.currStudent?.numClasses === null) {
+        const { currStudent } = this.state;
+
+        if (currStudent?.startDate === "null") {
             return <div>
-            <p className="name">{this.state.currStudent.name}</p>
-            <p>Email: {this.state.currStudent.email}</p>
-            <p>Phone: {this.state.currStudent.phone}</p>
-            <p>Pass Type: {this.state.currStudent.passType}</p>
-            <p>Start Date: {this.state.currStudent.startDate}</p>
-            <p>End Date: {this.state.currStudent.endDate}</p>
-            <p>Sessions Left: Unlimited</p>
-           </div>;
-        }
-        if (this.state.currStudent?.passType==="Drop in" || 
-            this.state.currStudent?.passType==="Groove Night" ||
-            this.state.currStudent?.passType==="Groove Night Y") {
-                return <div>
-                <p className="name">{this.state.currStudent.name}</p>
-                <p>Email: {this.state.currStudent.email}</p>
-                <p>Phone: {this.state.currStudent.phone}</p>
-                <p>Pass Type: {this.state.currStudent.passType}</p>
-                <p>Sessions Left: {this.state.currStudent.numClasses}</p>
-               </div>; 
+                <p className="name">{currStudent.name}</p>
+                <p>Email: {currStudent.email}</p>
+                <p>Phone: {currStudent.phone}</p>
+                <p>Pass Type: {currStudent.passType}</p>
+                <p>Sessions Attended: {currStudent.numClasses}</p>
+            </div>;
         } else {
             return <div>
-            <p className="name">{this.state.currStudent?.name}</p>
-            <p>Email: {this.state.currStudent?.email}</p>
-            <p>Phone: {this.state.currStudent?.phone}</p>
-            <p>Pass Type: {this.state.currStudent?.passType}</p>
-            <p>Start Date: {this.state.currStudent?.startDate}</p>
-            <p>End date: {this.state.currStudent?.endDate}</p>
-            <p>Sessions Left: {this.state.currStudent?.numClasses}</p>
-           </div>;
+                <p className="name">{currStudent?.name}</p>
+                <p>Email: {currStudent?.email}</p>
+                <p>Phone: {currStudent?.phone}</p>
+                <p>Pass Type: {currStudent?.passType}</p>
+                <p>Start Date: {currStudent?.startDate ? currStudent.startDate : "N/A"}</p>
+                <p>End date: {currStudent?.endDate ? currStudent.endDate : "N/A"}</p>
+                <p>Sessions Attended: {currStudent?.numClasses}</p>
+            </div>;
         }
     }
 
     doPassClick = (): void => {
-        this.setState({page: "payment"})
+        this.setState({ page: "payment" });
     }
-    
+
     doCheckInClick = (): void => {
-        fetch(`https://studioomfnapp.azurewebsites.net/decrementClasses/${this.props.id}`, {method: "POST"})
+        fetch(`https://studioomfnapp.azurewebsites.net/decrementClasses/${this.props.id}`, { method: "POST" })
             .then(this.doCheckInResp)
-            .catch(() => this.doCheckInError("failed to connect to server"))
+            .catch(() => this.doCheckInError("failed to connect to server"));
     }
 
     doCheckInResp = (resp: Response): void => {
@@ -115,29 +103,29 @@ export class AdminStudentPage extends Component<AdminStudentPageProps, AdminStud
     }
 
     doCheckInText = (_data: unknown): void => {
-        this.doRefreshTimeOut()
+        this.doRefreshTimeOut();
     }
 
     doCheckInError = (msg: String): void => {
-        console.log(msg)
+        console.log(msg);
     }
 
     doRefreshTimeOut = (): void => {
         fetch(`https://studioomfnapp.azurewebsites.net/student/${this.props.id}`)
             .then(this.doStudentResp)
-            .catch(() => this.doStudentError("failed to connect to server"))
+            .catch(() => this.doStudentError("failed to connect to server"));
     }
 
     doStudentResp = (resp: Response): void => {
         if (resp.status === 200) {
             resp.json().then(this.doStudentJson)
                 .catch(() => this.doStudentError("200 response is not JSON"));
-          } else if (resp.status === 400) {
+        } else if (resp.status === 400) {
             resp.text().then(this.doStudentError)
                 .catch(() => this.doStudentError("400 response is not text"));
-          } else {
+        } else {
             this.doStudentError(`bad status code from /api/student: ${resp.status}`);
-          };
+        }
     }
 
     doStudentJson = (data: unknown): void => {
@@ -151,29 +139,36 @@ export class AdminStudentPage extends Component<AdminStudentPageProps, AdminStud
             return;
         }
 
-        const student: Student = {name: data.student.name,
-                                    email: data.student.email,
-                                    phone: data.student.phone,
-                                    passType: data.student.passType,
-                                    startDate: data.student.startDate,
-                                    endDate: data.student.endDate,
-                                    numClasses: data.student.numClasses}
-        this.setState({currStudent: student, updating: false})                            
+        const student: Student = {
+            name: data.student.name,
+            email: data.student.email,
+            phone: data.student.phone,
+            passType: data.student.passType,
+            startDate: data.student.startDate,
+            endDate: data.student.endDate,
+            numClasses: data.student.numClasses
+        };
+        this.setState({ currStudent: student, updating: false });
     }
 
     doStudentError = (msg: String): void => {
-        console.log(msg)
+        console.log(msg);
     }
-    
+
     onBackClick = (): void => {
-        this.setState({page: "student"})
+        this.setState({ page: "student" });
     }
 
     doConfirmClick = (): void => {
-        this.setState({page: "student", updating: true})
+        this.setState({ page: "student", updating: true });
     }
 
     doBackClick = (): void => {
         this.props.onBackClick();
+    }
+
+    formatDate = (date: string): string => {
+        const [year, month, day] = date.split('-');
+        return `${month}-${day}-${year}`;
     }
 }

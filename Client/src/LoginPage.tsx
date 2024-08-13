@@ -1,10 +1,11 @@
 import { ChangeEvent, Component } from "react";
 import React from "react";
-import logo from "./assets/Logo.png"
+import logo from "./assets/Asset 6.png"
 import "./style.css"
 
 type LoginPageProps = {onLoginClick: () => void,
-                       onBackClick: () => void}
+                       onBackClick: () => void,
+                       onSignUpClick: () => void}
 
 type LoginPageState = {
     username: string;
@@ -20,26 +21,25 @@ export class LoginPage extends Component<LoginPageProps, LoginPageState> {
 
     render = (): JSX.Element => {
         return <div className="outerdiv">
+            <img src={logo} onClick={this.doBackClick} className="logoBack"/>
             <div className="login">
-                    <img src={logo} onClick={this.doBackClick} className="logoBack"/>
-                    ADMIN LOGIN
-                    <p>USERNAME</p>
-                    <input id="username" value={this.state.username} 
-                           onChange={this.doUsernameChange}></input>
-                    <p>PASSWORD</p>
-                    <input id="password" value={this.state.password} 
-                           onChange={this.doPasswordChange}></input>
-                    {this.renderError()}
-                    <button onClick={this.doLoginClick} className="loginBut">Login</button>
-               </div>
+                <p>EMAIL</p>
+                <input id="username" value={this.state.username} 
+                        onChange={this.doUsernameChange}></input>
+                <p>PASSWORD</p>
+                <input id="password" value={this.state.password} 
+                        onChange={this.doPasswordChange}></input>
+                <button onClick={this.doLoginClick} className="loginBut">LOGIN</button>
+                {this.renderError()}
+            </div>
         </div>  
     }
     
-    renderError = (): JSX.Element => {
+    renderError = (): JSX.Element | null => {
         if (this.state.error !== "") {
             return <p className="loginError">Error: {this.state.error}</p>
         }
-        return <p></p>
+        return null;
     }
     
     doUsernameChange = (evt: ChangeEvent<HTMLInputElement>): void => {
@@ -51,7 +51,7 @@ export class LoginPage extends Component<LoginPageProps, LoginPageState> {
     };
 
     doLoginClick = (): void => {
-        if (this.state.username !== "admin" || this.state.password !== "password") {
+        if (this.state.username !== "studioomla" || this.state.password !== "gaurayoga108") {
             this.setState({error: "Incorrect username or password"})
             return
         }
