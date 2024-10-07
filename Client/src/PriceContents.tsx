@@ -5,11 +5,11 @@ import X from "./assets/X symbol.png"
 import montly from "./assets/Monthly passes.png"
 import dropIn from "./assets/Drop in.png"
 import student from "./assets/Student special.png"
-import studentMonthly from "./assets/Student monthly.png"
-import regularMontly from "./assets/regular monthly.png"
+import studentMonthly from "./assets/Asset 45.png"
+import regularMontly from "./assets/Asset 44.png"
 import studentDropIn from "./assets/Student drop in.png"
 import regularDropIn from "./assets/Regular drop in.png"
-import studentSpecial from "./assets/1 semester.png"
+import studentSpecial from "./assets/Asset 46.png"
 
 type PriceContentsProps = {
     onBackClick: () => void

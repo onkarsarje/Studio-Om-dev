@@ -253,20 +253,6 @@ const validateParams = (userID, serviceID, templateID) => {
 
 /***/ }),
 
-/***/ "./src/assets/1 semester.png":
-/*!***********************************!*\
-  !*** ./src/assets/1 semester.png ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/4badf376fc8db3f5a0b1c37d94ceab07.png");
-
-/***/ }),
-
 /***/ "./src/assets/Asset 1.png":
 /*!********************************!*\
   !*** ./src/assets/Asset 1.png ***!
@@ -491,6 +477,48 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/assets/Asset 44.png":
+/*!*********************************!*\
+  !*** ./src/assets/Asset 44.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/6c1c84f5986c102fb5093cf22d532ab8.png");
+
+/***/ }),
+
+/***/ "./src/assets/Asset 45.png":
+/*!*********************************!*\
+  !*** ./src/assets/Asset 45.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/508ef95eac508cf03081dc8c2b18ea9e.png");
+
+/***/ }),
+
+/***/ "./src/assets/Asset 46.png":
+/*!*********************************!*\
+  !*** ./src/assets/Asset 46.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/3d733f1260b8b9ffb2d5cf0d06f61434.png");
+
+/***/ }),
+
 /***/ "./src/assets/Asset 6.png":
 /*!********************************!*\
   !*** ./src/assets/Asset 6.png ***!
@@ -586,20 +614,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/a3eb7adac7e5ba9574cf3b11975835fd.png");
-
-/***/ }),
-
-/***/ "./src/assets/Student monthly.png":
-/*!****************************************!*\
-  !*** ./src/assets/Student monthly.png ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/78d3a9d0c590729af985415a66b3f704.png");
 
 /***/ }),
 
@@ -740,20 +754,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/62880fbb725697d5d152ef0a790f9cee.png");
-
-/***/ }),
-
-/***/ "./src/assets/regular monthly.png":
-/*!****************************************!*\
-  !*** ./src/assets/regular monthly.png ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "images/dac86d48c1552e47e19d8ff73bfe933e.png");
 
 /***/ }),
 
@@ -35481,11 +35481,11 @@ const X_symbol_png_1 = __importDefault(__webpack_require__(/*! ./assets/X symbol
 const Monthly_passes_png_1 = __importDefault(__webpack_require__(/*! ./assets/Monthly passes.png */ "./src/assets/Monthly passes.png"));
 const Drop_in_png_1 = __importDefault(__webpack_require__(/*! ./assets/Drop in.png */ "./src/assets/Drop in.png"));
 const Student_special_png_1 = __importDefault(__webpack_require__(/*! ./assets/Student special.png */ "./src/assets/Student special.png"));
-const Student_monthly_png_1 = __importDefault(__webpack_require__(/*! ./assets/Student monthly.png */ "./src/assets/Student monthly.png"));
-const regular_monthly_png_1 = __importDefault(__webpack_require__(/*! ./assets/regular monthly.png */ "./src/assets/regular monthly.png"));
+const Asset_45_png_1 = __importDefault(__webpack_require__(/*! ./assets/Asset 45.png */ "./src/assets/Asset 45.png"));
+const Asset_44_png_1 = __importDefault(__webpack_require__(/*! ./assets/Asset 44.png */ "./src/assets/Asset 44.png"));
 const Student_drop_in_png_1 = __importDefault(__webpack_require__(/*! ./assets/Student drop in.png */ "./src/assets/Student drop in.png"));
 const Regular_drop_in_png_1 = __importDefault(__webpack_require__(/*! ./assets/Regular drop in.png */ "./src/assets/Regular drop in.png"));
-const _1_semester_png_1 = __importDefault(__webpack_require__(/*! ./assets/1 semester.png */ "./src/assets/1 semester.png"));
+const Asset_46_png_1 = __importDefault(__webpack_require__(/*! ./assets/Asset 46.png */ "./src/assets/Asset 46.png"));
 class PriceContents extends react_1.Component {
     constructor(props) {
         super(props);
@@ -35499,8 +35499,8 @@ class PriceContents extends react_1.Component {
                     react_2.default.createElement("div", { className: "tier" },
                         react_2.default.createElement("img", { className: "tierTitle", src: Monthly_passes_png_1.default }),
                         react_2.default.createElement("div", { className: "innerTier" },
-                            react_2.default.createElement("img", { src: regular_monthly_png_1.default }),
-                            react_2.default.createElement("img", { src: Student_monthly_png_1.default })),
+                            react_2.default.createElement("img", { src: Asset_44_png_1.default }),
+                            react_2.default.createElement("img", { src: Asset_45_png_1.default })),
                         react_2.default.createElement("div", null,
                             react_2.default.createElement("li", null, "Access to 40+ yoga classes & events"),
                             react_2.default.createElement("li", null, "Lounge access to study/hangout"),
@@ -35517,7 +35517,7 @@ class PriceContents extends react_1.Component {
                     react_2.default.createElement("div", { className: "tier" },
                         react_2.default.createElement("img", { className: "tierTitle", src: Student_special_png_1.default }),
                         react_2.default.createElement("div", { className: "innerTier" },
-                            react_2.default.createElement("img", { src: _1_semester_png_1.default }),
+                            react_2.default.createElement("img", { src: Asset_46_png_1.default }),
                             react_2.default.createElement("div", { className: "studentList" },
                                 react_2.default.createElement("li", null, "Access to 120+ classes & events"),
                                 react_2.default.createElement("li", null, "Lounge access to study/hangout"),
@@ -35526,7 +35526,7 @@ class PriceContents extends react_1.Component {
     }
 }
 exports.PriceContents = PriceContents;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJpY2VDb250ZW50cy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9QcmljZUNvbnRlbnRzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxpQ0FBa0M7QUFDbEMsa0RBQTBCO0FBQzFCLCtFQUE0QztBQUM1Qyx5RUFBcUM7QUFDckMscUZBQWdEO0FBQ2hELHVFQUF5QztBQUN6Qyx1RkFBa0Q7QUFDbEQsdUZBQXlEO0FBQ3pELHVGQUF3RDtBQUN4RCx1RkFBd0Q7QUFDeEQsdUZBQXdEO0FBQ3hELDhFQUFvRDtBQU1wRCxNQUFhLGFBQWMsU0FBUSxpQkFBaUM7SUFDaEUsWUFBWSxLQUF5QjtRQUNqQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFHakIsV0FBTSxHQUFHLEdBQWdCLEVBQUU7WUFDdkIsT0FBTyx1Q0FBSyxTQUFTLEVBQUMsZUFBZTtnQkFDakMsdUNBQUssU0FBUyxFQUFHLFlBQVk7b0JBQ3pCLHVDQUFLLFNBQVMsRUFBQyxPQUFPLEdBQU87b0JBQzdCLHVDQUFLLFNBQVMsRUFBQyxZQUFZLEVBQUMsR0FBRyxFQUFFLHlCQUFLLEdBQUc7b0JBQ3pDLHVDQUFLLFNBQVMsRUFBQyxPQUFPLEVBQUMsR0FBRyxFQUFFLHNCQUFDLEVBQUUsT0FBTyxFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsV0FBVyxHQUFHLENBQy9EO2dCQUNOLHVDQUFLLFNBQVMsRUFBQyxVQUFVO29CQUNyQix1Q0FBSyxTQUFTLEVBQUMsTUFBTTt3QkFDakIsdUNBQUssU0FBUyxFQUFDLFdBQVcsRUFBQyxHQUFHLEVBQUUsNEJBQU0sR0FBRzt3QkFDekMsdUNBQUssU0FBUyxFQUFDLFdBQVc7NEJBQ3RCLHVDQUFLLEdBQUcsRUFBRSw2QkFBYSxHQUFHOzRCQUMxQix1Q0FBSyxHQUFHLEVBQUUsNkJBQWMsR0FBRyxDQUN6Qjt3QkFDTjs0QkFDSSxnRkFBNEM7NEJBQzVDLDJFQUF1Qzs0QkFDdkMsc0VBQWtDOzRCQUNsQyxzRUFBa0M7NEJBQ2xDLHVFQUFtQzs0QkFDbkMsNEVBQXdDOzRCQUN4Qyx5RUFBcUMsQ0FDbkMsQ0FDSjtvQkFDTix1Q0FBSyxTQUFTLEVBQUMsTUFBTTt3QkFDakIsdUNBQUssU0FBUyxFQUFDLFdBQVcsRUFBQyxHQUFHLEVBQUUscUJBQU0sR0FBRzt3QkFDekMsdUNBQUssU0FBUyxFQUFDLFdBQVc7NEJBQ3RCLHVDQUFLLEdBQUcsRUFBRSw2QkFBYSxHQUFHOzRCQUMxQix1Q0FBSyxHQUFHLEVBQUUsNkJBQWEsR0FBRyxDQUN4QixDQUNKO29CQUNOLHVDQUFLLFNBQVMsRUFBQyxNQUFNO3dCQUNqQix1Q0FBSyxTQUFTLEVBQUMsV0FBVyxFQUFDLEdBQUcsRUFBRSw2QkFBTyxHQUFHO3dCQUMxQyx1Q0FBSyxTQUFTLEVBQUMsV0FBVzs0QkFDdEIsdUNBQUssR0FBRyxFQUFFLHlCQUFjLEdBQUc7NEJBQzNCLHVDQUFLLFNBQVMsRUFBQyxhQUFhO2dDQUN4Qiw0RUFBd0M7Z0NBQ3hDLDJFQUF1QztnQ0FDdkMsNkRBQXlCLENBQ3ZCLENBQ0osQ0FDSixDQUNKLENBQ0osQ0FBQztRQUNYLENBQUMsQ0FBQTtJQTlDRCxDQUFDO0NBK0NKO0FBbERELHNDQWtEQyJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiUHJpY2VDb250ZW50cy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9QcmljZUNvbnRlbnRzLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxpQ0FBa0M7QUFDbEMsa0RBQTBCO0FBQzFCLCtFQUE0QztBQUM1Qyx5RUFBcUM7QUFDckMscUZBQWdEO0FBQ2hELHVFQUF5QztBQUN6Qyx1RkFBa0Q7QUFDbEQseUVBQWtEO0FBQ2xELHlFQUFpRDtBQUNqRCx1RkFBd0Q7QUFDeEQsdUZBQXdEO0FBQ3hELHlFQUFrRDtBQU1sRCxNQUFhLGFBQWMsU0FBUSxpQkFBaUM7SUFDaEUsWUFBWSxLQUF5QjtRQUNqQyxLQUFLLENBQUMsS0FBSyxDQUFDLENBQUM7UUFHakIsV0FBTSxHQUFHLEdBQWdCLEVBQUU7WUFDdkIsT0FBTyx1Q0FBSyxTQUFTLEVBQUMsZUFBZTtnQkFDakMsdUNBQUssU0FBUyxFQUFHLFlBQVk7b0JBQ3pCLHVDQUFLLFNBQVMsRUFBQyxPQUFPLEdBQU87b0JBQzdCLHVDQUFLLFNBQVMsRUFBQyxZQUFZLEVBQUMsR0FBRyxFQUFFLHlCQUFLLEdBQUc7b0JBQ3pDLHVDQUFLLFNBQVMsRUFBQyxPQUFPLEVBQUMsR0FBRyxFQUFFLHNCQUFDLEVBQUUsT0FBTyxFQUFFLElBQUksQ0FBQyxLQUFLLENBQUMsV0FBVyxHQUFHLENBQy9EO2dCQUNOLHVDQUFLLFNBQVMsRUFBQyxVQUFVO29CQUNyQix1Q0FBSyxTQUFTLEVBQUMsTUFBTTt3QkFDakIsdUNBQUssU0FBUyxFQUFDLFdBQVcsRUFBQyxHQUFHLEVBQUUsNEJBQU0sR0FBRzt3QkFDekMsdUNBQUssU0FBUyxFQUFDLFdBQVc7NEJBQ3RCLHVDQUFLLEdBQUcsRUFBRSxzQkFBYSxHQUFHOzRCQUMxQix1Q0FBSyxHQUFHLEVBQUUsc0JBQWMsR0FBRyxDQUN6Qjt3QkFDTjs0QkFDSSxnRkFBNEM7NEJBQzVDLDJFQUF1Qzs0QkFDdkMsc0VBQWtDOzRCQUNsQyxzRUFBa0M7NEJBQ2xDLHVFQUFtQzs0QkFDbkMsNEVBQXdDOzRCQUN4Qyx5RUFBcUMsQ0FDbkMsQ0FDSjtvQkFDTix1Q0FBSyxTQUFTLEVBQUMsTUFBTTt3QkFDakIsdUNBQUssU0FBUyxFQUFDLFdBQVcsRUFBQyxHQUFHLEVBQUUscUJBQU0sR0FBRzt3QkFDekMsdUNBQUssU0FBUyxFQUFDLFdBQVc7NEJBQ3RCLHVDQUFLLEdBQUcsRUFBRSw2QkFBYSxHQUFHOzRCQUMxQix1Q0FBSyxHQUFHLEVBQUUsNkJBQWEsR0FBRyxDQUN4QixDQUNKO29CQUNOLHVDQUFLLFNBQVMsRUFBQyxNQUFNO3dCQUNqQix1Q0FBSyxTQUFTLEVBQUMsV0FBVyxFQUFDLEdBQUcsRUFBRSw2QkFBTyxHQUFHO3dCQUMxQyx1Q0FBSyxTQUFTLEVBQUMsV0FBVzs0QkFDdEIsdUNBQUssR0FBRyxFQUFFLHNCQUFjLEdBQUc7NEJBQzNCLHVDQUFLLFNBQVMsRUFBQyxhQUFhO2dDQUN4Qiw0RUFBd0M7Z0NBQ3hDLDJFQUF1QztnQ0FDdkMsNkRBQXlCLENBQ3ZCLENBQ0osQ0FDSixDQUNKLENBQ0osQ0FBQztRQUNYLENBQUMsQ0FBQTtJQTlDRCxDQUFDO0NBK0NKO0FBbERELHNDQWtEQyJ9
 
 /***/ }),
 
@@ -35979,4 +35979,4 @@ exports.isRecord = isRecord;
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.4cfe5e63c15c209c428a.js.map
+//# sourceMappingURL=main.a274aec15110e14c4272.js.map
