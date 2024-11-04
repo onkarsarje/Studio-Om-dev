@@ -44,7 +44,6 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     background-image: url(/images/9685bc43226938da3fbd9f4b1dd85b50.png);
-
 }
 
 #main {
@@ -217,7 +216,7 @@ body {
         font-family: Arial, sans-serif;
         color: #e0e4d8;
         overflow-y: scroll;
-        background-image: url(/images/9685bc43226938da3fbd9f4b1dd85b50.png);
+        background-image: url(/bfe5ceeb0c4247130d52.png);
     }
 
     #main {
@@ -1466,7 +1465,7 @@ body {
 .days {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     gap: 2vw;
     padding-right: 4rem;
     margin-bottom: 1rem;
@@ -1490,6 +1489,10 @@ body {
 
 .sat {
  width: 12.375rem;
+}
+
+.sun {
+    width: 12.375rem;
 }
 
 #selected {
@@ -1558,6 +1561,10 @@ body {
     .sat {
      width: 7.375rem;
     }
+
+    .sun {
+        width: 7.375rem;
+    }
     
 }
 
@@ -1594,6 +1601,10 @@ body {
      .sat {
         width: 18.375vw;
      }
+
+    .sun {
+        width: 18.375vw;
+    }
      
      #selected {
          border: 1px solid #e0e4d8;
@@ -1659,4 +1670,4 @@ body {
     display: none; /* Hide scrollbar buttons */
 }
 
-/*# sourceMappingURL=30adc4e1a3dfeb7b3c7c.css.map*/
+/*# sourceMappingURL=1524e020b07da353bd61.css.map*/
