@@ -6,6 +6,7 @@ import tue from "./assets/Asset 34.png"
 import wed from "./assets/Asset 35.png"
 import fri from "./assets/Asset 36.png"
 import sat from "./assets/Asset 37.png"
+import sun from "./assets/Asset 5.png"
 
 
 type ClassContentsProps = {
@@ -13,7 +14,7 @@ type ClassContentsProps = {
 }
 
 type ClassContentsState = {
-    day: "t" | "w" | "f" | "s"
+    day: "t" | "w" | "f" | "s" | "su"
 }
 
 export class ClassContents extends Component<ClassContentsProps, ClassContentsState> {
@@ -41,6 +42,7 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                     <img src={wed} onClick={this.doWClick} className="wed" id = "selected"/>
                     <img src={fri} onClick={this.doFClick} className="fri"/>
                     <img src={sat} onClick={this.doSClick} className="sat"/>
+                    <img src={sun} onClick={this.doSuClick} className="sun"/>
                 </div>
                 <div className="classes">
                     <div className="classCard">
@@ -75,6 +77,7 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                     <img src={wed} onClick={this.doWClick} className="wed"/>
                     <img src={fri} onClick={this.doFClick} className="fri"/>
                     <img src={sat} onClick={this.doSClick} className="sat"/>
+                    <img src={sun} onClick={this.doSuClick} className="sun"/>
                 </div>
                 <div className="classes">
                     <div className="classCard">
@@ -109,6 +112,7 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                     <img src={wed} onClick={this.doWClick} className="wed"/>
                     <img src={fri} onClick={this.doFClick} className="fri" id = "selected"/>
                     <img src={sat} onClick={this.doSClick} className="sat"/>
+                    <img src={sun} onClick={this.doSuClick} className="sun"/>
                 </div>
                 <div className="classes">
                     <div className="classCard">
@@ -118,6 +122,19 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                         <p>YOGA FOR GOOD VIBES</p>
                         <p>Release stress and muscle tension and harness positivity in this all-levels hatha vinyasa flow.</p>
                     </div>
+                </div>
+            </div>
+        }
+        else if (this.state.day === "su") {
+            return <div>
+                <div className="days">
+                    <img src={tue} onClick={this.doTClick} className="tue"/>
+                    <img src={wed} onClick={this.doWClick} className="wed"/>
+                    <img src={fri} onClick={this.doFClick} className="fri"/>
+                    <img src={sat} onClick={this.doSClick} className="sat"/>
+                    <img src={sun} onClick={this.doSuClick} className="sun" id = "selected"/>
+                </div>
+                <div className="classes">
                     <div className="classCard">
                         <div>
                             <p>7.30 PM</p>
@@ -128,7 +145,6 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                 </div>
             </div>
         }
-    
         else {
             return <div>
                 <div className="days">
@@ -136,6 +152,7 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
                     <img src={wed} onClick={this.doWClick} className="wed"/>
                     <img src={fri} onClick={this.doFClick} className="fri"/>
                     <img src={sat} onClick={this.doSClick} className="sat" id = "selected"/>
+                    <img src={sun} onClick={this.doSuClick} className="sun"/>
                 </div>
                 <div className="classes">
                     <div className="classCard">
@@ -179,5 +196,9 @@ export class ClassContents extends Component<ClassContentsProps, ClassContentsSt
 
     doSClick = (): void => {
         this.setState({day: "s"})
+    }
+
+    doSuClick = (): void => {
+        this.setState({day: "su"})
     }
 }

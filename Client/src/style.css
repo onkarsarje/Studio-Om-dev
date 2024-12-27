@@ -1458,7 +1458,7 @@ body {
 .days {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     gap: 2vw;
     padding-right: 4rem;
     margin-bottom: 1rem;
@@ -1482,6 +1482,10 @@ body {
 
 .sat {
  width: 12.375rem;
+}
+
+.sun {
+    width: 12.375rem;
 }
 
 #selected {
@@ -1550,6 +1554,10 @@ body {
     .sat {
      width: 7.375rem;
     }
+
+    .sun {
+        width: 7.375rem;
+    }
     
 }
 
@@ -1586,6 +1594,10 @@ body {
      .sat {
         width: 18.375vw;
      }
+
+    .sun {
+        width: 18.375vw;
+    }
      
      #selected {
          border: 1px solid #e0e4d8;
